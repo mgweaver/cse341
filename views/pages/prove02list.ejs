@@ -12,20 +12,10 @@
   </div>
 </div>
 
-<% let books = [] %>
-
 <% for (let book of books) { %>
   <h2><%= book.title %></h2>
   <p><%= book.summary %></p>
 <% } %>
-
-<form action='/prove02/add-book' method='post'>
-  <h2>Book Title:</h2>
-  <input type="text" name="title" id="title">
-  <h2>Summary:</h2>
-  <input type="text" name="summary" id="summary"><br><br>
-  <button type="submit">Submit</button>
-</form>
 
 </body>
 </html>
