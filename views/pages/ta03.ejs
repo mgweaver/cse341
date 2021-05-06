@@ -9,11 +9,32 @@
 <div class="jumbotron text-center">
   <div class="container">
     <h1><%= title %></h1>
-    <p>This is the placeholder for Team Activity 03</p>
+    <p>Team Activity 03</p>
+
   </div>
 </div>
 <div class="container">
-  
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Image</th>
+        </tr>
+      </thead>
+    
+      <tbody>
+        <% for(var i=0; i < body.length; i++) { %>
+        <tr>
+          <td><%= body[i].name %></td>
+          <td><%= body[i].price %></td>
+          <td><img src="<%= body[i].imageUrl %>"></td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+  </div>
 </div>
 
 
